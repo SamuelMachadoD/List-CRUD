@@ -24,7 +24,7 @@ public class Lista {
 			if(itens[i].equals("---")){
 				itens[i] = conteudo;
 			}else {
-				System.out.println("ERRO: Sem espaços vazios");
+				System.out.println("DESCULPE: Sem espaços vazios");
 			}
 		}
 	}

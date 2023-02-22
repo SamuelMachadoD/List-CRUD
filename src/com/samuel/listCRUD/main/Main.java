@@ -29,7 +29,9 @@ public class Main {
 				//encerra o programa
 				break;
 			case 1:
-				//Adiciona um item
+				System.out.println("------------- ");
+				String conteudo = scan.next();
+				lista.adicionaItens(conteudo);
 				break;
 			case 2:
 				//Altera um item
