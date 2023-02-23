@@ -16,16 +16,27 @@ public class Lista {
 			System.out.println(itens[i]);
 		}
 	}
-	public void deletaItens(int indice) {
+	public void deletaItem(int indice) {
 		itens[indice] = "---";
 	}
-	public void adicionaItens(String conteudo) {
+	
+	public void adicionaItem(String conteudo) {
 		for(int i = 0; i < itens.length; i++) {
 			if(itens[i].equals("---")){
 				itens[i] = conteudo;
 			}else {
 				System.out.println("DESCULPE: Sem espaços vazios");
 			}
+		}
+	}
+	
+	public void alteraItem(int id, String conteudo) {
+		itens[id] = conteudo;
+	}
+	
+	public void limpaLista() {
+		for(int i = 0 ; i < itens.length; i++) {
+			itens[i] = "---";
 		}
 	}
 }
