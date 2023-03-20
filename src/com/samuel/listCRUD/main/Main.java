@@ -10,6 +10,7 @@ public class Main {
 		
 		Scanner scan = new Scanner(System.in);
 		Lista lista = new Lista();
+		String conteudo =
 		
 		System.out.println("Lista");
 		System.out.println("-----------");
@@ -31,10 +32,12 @@ public class Main {
 			case 1:
 				System.out.println("------------- ");
 				String conteudo = scan.next();
-				lista.adicionaItens(conteudo);
+				lista.adicionaItem(conteudo);
 				break;
 			case 2:
-				//Altera um item
+				System.out.println("Digite o Id: ");
+				
+				lista.alteraItem(opcao, conteudo);
 				break;
 			case 3:
 				//Deleta um item
